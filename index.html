@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&I Variety</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="switch.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">J&I Variety</div>
+            <!-- Dark mode toggle button -->
+            <label class="switch" for="darkModeToggle">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                <div class="slider"></div>
+            </label>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <div class="nav-toggle-bar"></div>
+                <div class="nav-toggle-bar"></div>
+                <div class="nav-toggle-bar"></div>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero fade-in">
+        <h1>Welcome to J&I Variety</h1>
+        <p>Your One-Stop Shop for All Your Needs</p>
+        <a href="#gallery"><button>Explore Our Gallery</button></a>
+    </div>
+
+    <div class="services fade-in" id="services">
+        <h2>Our Services</h2>
+        <!-- Services Section Start -->
+        <div class="service-items-container">
+            <!-- Service Items -->
+            <div class="service-item">
+                <img src="grocerry.png" alt="Groceries">
+                <h3>Groceries</h3>
+                <p>We offer a wide variety of fresh produce, dairy products, and household essentials.</p>
+            </div>
+            <div class="service-item">
+                <img src="pantry.jpg" alt="Pantry Staples">
+                <h3>Pantry Staples</h3>
+                <p>J & I Variety provides a selection of basic pantry items, including rice, pasta, canned goods, cereals, and condiments. These items are ideal for everyday cooking and meal preparation.</p>
+            </div>
+            <div class="service-item">
+                <img src="snacks.jpg" alt="Snacks">
+                <h3>Snacks</h3>
+                <p>A wide variety of snacks are available, such as chips, cookies, candies, and nuts. The store also carries healthier snack options, including granola bars and dried fruits.</p>
+            </div>
+            <div class="service-item">
+                <img src="beverages.jpg" alt="Beverages">
+                <h3>Beverages</h3>
+                <p>The beverage section includes soft drinks, juices, bottled water, and energy drinks. You can also find hot beverages like coffee and tea, available both for takeout and as packaged goods.</p>
+            </div>
+            <div class="service-item">
+                <img src="household.jpg" alt="Household Essentials">
+                <h3>Household Essentials</h3>
+                <p>In addition to food items, J & I Variety stocks various household essentials, including cleaning supplies, paper products, and personal care items like soap, shampoo, and toothpaste.</p>
+            </div>
+            <div class="service-item">
+                <img src="beer_wine.jpg" alt="Beer and Wine Selection">
+                <h3>Beer and Wine Selection</h3>
+                <p><strong>Beers:</strong> The beer selection includes popular domestic brands like Budweiser, Coors, and Miller, as well as imported options such as Heineken and Corona. You might also find craft beers from local breweries, depending on availability. These options range from light lagers to rich stouts and IPAs.</p>
+                <p><strong>Wines:</strong> The wine section features a variety of red, white, and sparkling wines.</p>
+            </div>
+            <div class="service-item">
+                <img src="lotteryLogo.png" alt="Lottery Tickets">
+                <h3>Lottery Tickets</h3>
+                <p>Try your luck with our selection of lottery tickets. You could be the next big winner!</p>
+            </div>
+        </div>
+        <!-- Services Section End -->
+    </div>
+
+<!-- Lottery Section -->
+<div class="lottery-section">
+    <h2>Lottery Games</h2>
+    <div class="lottery-games">
+        <div class="lottery-game" data-info="<strong>Numbers Games</strong><br>Play various number-based lottery games!<br><strong>Draw Time:</strong> 7:00 pm">
+            <img src="numbers_games.png" alt="Numbers Games">
+            <h3>Numbers Games</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>MassCash</strong><br>Win cash prizes by matching numbers!<br><strong>Draw Time:</strong> 10:00 pm">
+            <img src="masscash.png" alt="MassCash">
+            <h3>MassCash</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>Keno</strong><br>Pick numbers and win prizes!<br><strong>Draw Time:</strong> Every 4 minutes">
+            <img src="keno.png" alt="Keno">
+            <h3>Keno</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>Mega Millions</strong><br>Jackpot game with multi-state drawings!<br><strong>Draw Time:</strong> 11:00 pm">
+            <img src="mega_millions.png" alt="Mega Millions">
+            <h3>Mega Millions</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>Megabucks</strong><br>Big jackpots with drawings on specific days!<br><strong>Draw Time:</strong> 9:00 pm">
+            <img src="megabucks.png" alt="Megabucks">
+            <h3>Megabucks</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>Powerball</strong><br>Win large jackpots with multi-state drawings!<br><strong>Draw Time:</strong> 10:59 pm">
+            <img src="powerball.png" alt="Powerball">
+            <h3>Powerball</h3>
+        </div>
+        <div class="lottery-game" data-info="<strong>Lucky for Life</strong><br>Win lifetime prizes with drawings twice a week!<br><strong>Draw Time:</strong> 10:30 pm">
+            <img src="lucky_for_life.png" alt="Lucky for Life">
+            <h3>Lucky for Life</h3>
+        </div>
+    </div>
+    <div id="info-box"></div>
+</div>
+
+
+
+    <!-- Gallery Section -->
+    <div class="portfolio fade-in" id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+            <img src="1.jpg" alt="J&I Variety 1">
+            <img src="2.jpg" alt="J&I Variety 2">
+            <img src="3.jpg" alt="J&I Variety 3">
+            <img src="4.jpg" alt="J&I Variety 4">
+            <img src="5.jpg" alt="J&I Variety 5">
+            <img src="6.jpg" alt="J&I Variety 6">
+            <img src="7.jpg" alt="J&I Variety 7">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact fade-in" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: ji.variety@example.com</p>
+        <p>Phone: (781) 123-4567</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="footer fade-in">
+        <p>&copy; 2024 J&I Variety. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="switch.js"></script>
+</body>
+</html>
