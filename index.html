@@ -34,7 +34,43 @@
         <h1>Welcome to J&I Variety</h1>
         <p>Your One-Stop Shop for All Your Needs</p>
         <a href="#gallery"><button>Explore Our Gallery</button></a>
+        <p id="todays-date" class="todays-date"></p> <!-- Date will be displayed here -->
     </div>
+    
+
+<!-- Container for both boxes -->
+<div class="game-container">
+    <!-- Everyday's Games -->
+    <div class="everydays-games">
+        <h2>Everyday's Games</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="numbers_games.png" alt="The Numbers Game">
+                <p>The Numbers Game</p>
+            </div>
+            <div class="game-item">
+                <img src="masscash.png" alt="Mass Cash">
+                <p>Mass Cash</p>
+            </div>
+            <div class="game-item">
+                <img src="lucky_for_life.png" alt="Lucky for Life">
+                <p>Lucky for Life</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tonight's Special Game -->
+    <div class="tonights-special-game">
+        <h2>Tonight's Special Game</h2>
+        <div class="game-item">
+            <img id="tonights-game-image" src="" alt="Tonight's Game Image">
+            <p id="tonights-game-name"></p>
+        </div>
+    </div>
+</div>
+
+
+
 
     <div class="services fade-in" id="services">
         <h2>Our Services</h2>
@@ -81,41 +117,42 @@
         <!-- Services Section End -->
     </div>
 
-<!-- Lottery Section -->
-<div class="lottery-section">
-    <h2>Lottery Games</h2>
-    <div class="lottery-games">
-        <div class="lottery-game" data-info="<strong>Numbers Games</strong><br>Play various number-based lottery games!<br><strong>Draw Time:</strong> 7:00 pm">
-            <img src="numbers_games.png" alt="Numbers Games">
-            <h3>Numbers Games</h3>
+    <!-- Lottery Section -->
+    <div class="lottery-section">
+        <h2>Lottery Games</h2>
+        <div class="lottery-games">
+            <div class="lottery-game" data-info="<strong>Numbers Games</strong><br>Draw Time: Midday and Evening draws, typically at 12:55 PM and 7:00 PM.<br>Wager Amount: $0.25, $0.50, $1.00, or more, depending on the bet type.<br><strong>How to Play:</strong><br>Select Numbers: Choose a 4-digit number or opt for Quick Pick.<br>Bet Type: Choose from Exact Order, Any Order, or other bet types.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="numbers_games.png" alt="Numbers Games">
+                <h3>Numbers Games</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>MassCash</strong><br>Draw Time: 10:00 PM daily.<br>Wager Amount: $1 per play.<br><strong>How to Play:</strong><br>Select Numbers: Choose 5 numbers from 1 to 35.<br>Quick Pick: Option available for random number selection.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="masscash.png" alt="MassCash">
+                <h3>MassCash</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>Keno</strong><br>Draw Time: Every 4 minutes, from early morning until late night.<br>Wager Amount: Varies; higher wagers can increase potential prizes.<br><strong>How to Play:</strong><br>Select Numbers: Choose up to 12 numbers from a pool of 1 to 80.<br>Quick Pick: Option for random number selection.<br>Submit Ticket: Purchase your ticket before the next draw.">
+                <img src="keno.png" alt="Keno">
+                <h3>Keno</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>Mega Millions</strong><br>Draw Time: Tuesdays and Fridays at 11:00 PM.<br>Wager Amount: $2 per play; $3 with Megaplier.<br><strong>How to Play:</strong><br>Select Numbers: Choose 5 numbers from 1 to 70 and a Mega Ball from 1 to 25.<br>Megaplier: Optionally add the Megaplier feature.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="mega_millions.png" alt="Mega Millions">
+                <h3>Mega Millions</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>Megabucks</strong><br>Draw Time: Wednesdays and Saturdays at 9:00 PM.<br>Wager Amount: $1 per play.<br><strong>How to Play:</strong><br>Select Numbers: Choose 6 numbers from 1 to 49.<br>Quick Pick: Option available for random number selection.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="megabucks.png" alt="Megabucks">
+                <h3>Megabucks</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>Powerball</strong><br>Draw Time: Mondays, Wednesdays, and Saturdays at 10:59 PM.<br>Wager Amount: $2 per play; $3 with Power Play.<br><strong>How to Play:</strong><br>Select Numbers: Choose 5 numbers from 1 to 69 and a Powerball from 1 to 26.<br>Power Play: Optionally add the Power Play feature.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="powerball.png" alt="Powerball">
+                <h3>Powerball</h3>
+            </div>
+            <div class="lottery-game" data-info="<strong>Lucky for Life</strong><br>Draw Time: Mondays and Thursdays at 10:30 PM.<br>Wager Amount: $2 per play.<br><strong>How to Play:</strong><br>Select Numbers: Choose 5 numbers from 1 to 48 and a Lucky Ball from 1 to 18.<br>Quick Pick: Option available for random number selection.<br>Submit Ticket: Purchase your ticket before the draw time.">
+                <img src="lucky_for_life.png" alt="Lucky for Life">
+                <h3>Lucky for Life</h3>
+            </div>
         </div>
-        <div class="lottery-game" data-info="<strong>MassCash</strong><br>Win cash prizes by matching numbers!<br><strong>Draw Time:</strong> 10:00 pm">
-            <img src="masscash.png" alt="MassCash">
-            <h3>MassCash</h3>
-        </div>
-        <div class="lottery-game" data-info="<strong>Keno</strong><br>Pick numbers and win prizes!<br><strong>Draw Time:</strong> Every 4 minutes">
-            <img src="keno.png" alt="Keno">
-            <h3>Keno</h3>
-        </div>
-        <div class="lottery-game" data-info="<strong>Mega Millions</strong><br>Jackpot game with multi-state drawings!<br><strong>Draw Time:</strong> 11:00 pm">
-            <img src="mega_millions.png" alt="Mega Millions">
-            <h3>Mega Millions</h3>
-        </div>
-        <div class="lottery-game" data-info="<strong>Megabucks</strong><br>Big jackpots with drawings on specific days!<br><strong>Draw Time:</strong> 9:00 pm">
-            <img src="megabucks.png" alt="Megabucks">
-            <h3>Megabucks</h3>
-        </div>
-        <div class="lottery-game" data-info="<strong>Powerball</strong><br>Win large jackpots with multi-state drawings!<br><strong>Draw Time:</strong> 10:59 pm">
-            <img src="powerball.png" alt="Powerball">
-            <h3>Powerball</h3>
-        </div>
-        <div class="lottery-game" data-info="<strong>Lucky for Life</strong><br>Win lifetime prizes with drawings twice a week!<br><strong>Draw Time:</strong> 10:30 pm">
-            <img src="lucky_for_life.png" alt="Lucky for Life">
-            <h3>Lucky for Life</h3>
-        </div>
+        <div id="info-box"></div>
     </div>
-    <div id="info-box"></div>
-</div>
+    
 
 
 
